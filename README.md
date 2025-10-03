@@ -10,7 +10,7 @@ A modern, responsive, and dynamic website built with React, Tailwind CSS, and No
 - 🎯 Scroll-triggered content reveal
 - 💼 Contact form with validation
 - ⚡ Performance optimized
-- 🚀 Production-ready for GitHub Pages
+- 🚀 Production-ready for Netlify and GitHub Pages
 
 ## 🛠️ Tech Stack
 
@@ -62,11 +62,23 @@ npm run build
 npm run preview
 ```
 
+## 🌐 Deployment
+
+### Deploy to Netlify (Recommended):
+1. Push your code to GitHub
+2. Connect your repository to Netlify
+3. Netlify auto-detects settings from `netlify.toml`
+4. Site deploys automatically on every push
+
+See **[NETLIFY_DEPLOYMENT.md](./NETLIFY_DEPLOYMENT.md)** for detailed instructions.
+
 ### Deploy to GitHub Pages:
 ```bash
 # Build and deploy in one command
 npm run deploy
 ```
+
+See **[DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md)** for GitHub Pages instructions.
 
 ## 📁 Project Structure
 
@@ -86,7 +98,9 @@ Xcentric_Website/
 │   ├── vite.config.js   # Vite configuration
 │   └── package.json
 ├── package.json         # Root scripts
-├── DEPLOYMENT_GUIDE.md  # Detailed deployment instructions
+├── netlify.toml         # Netlify configuration
+├── NETLIFY_DEPLOYMENT.md  # Netlify deployment guide
+├── DEPLOYMENT_GUIDE.md  # GitHub Pages deployment guide
 └── PERFORMANCE_OPTIMIZATIONS.md  # Performance tips
 ```
 

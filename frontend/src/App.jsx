@@ -223,13 +223,13 @@ function About({ data }) {
         <div className="absolute right-0 top-0 w-1 -rotate-45 h-[120%] bg-gradient-to-b from-tealBrand via-gold to-purpleBrand animate-pulse animation-delay-1000" />
       </div>
       <div className="mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-10 items-start">
-        <div className="rounded-2xl overflow-hidden border border-white/10 relative group animate-slide-in-left">
+        <div className="rounded-2xl overflow-hidden border border-white/10 relative group animate-slide-in-left min-h-[400px] md:min-h-[500px]">
           <img className="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-500 group-hover:scale-105" alt="Human‑centricity" loading="lazy" src={getAsset('img40.jpg') || getImage(12)} />
-          <div className="absolute inset-0 bg-gradient-to-tr from-night/60 via-transparent to-night/20" />
-          <div className="absolute bottom-8 left-8 animate-fade-in-up animation-delay-400">
-            <p className="text-yellowBrand text-sm uppercase tracking-widest">Our Promise</p>
-            <h3 className="mt-2 text-3xl md:text-4xl font-bold text-gold">{about?.promiseTitle}</h3>
-            <p className="mt-3 max-w-xl text-gray-200 text-sm md:text-base">We champion the voice of consumers in crafting our solutions designed to align your business objectives, deliver commercial success and ultimately leading to better products, services and experiences for the people you serve.</p>
+          <div className="absolute inset-0 bg-gradient-to-tr from-night/80 via-night/40 to-night/20" />
+          <div className="absolute inset-x-4 bottom-4 md:bottom-8 md:left-8 md:right-8 animate-fade-in-up animation-delay-400">
+            <p className="text-yellowBrand text-xs md:text-sm uppercase tracking-widest">Our Promise</p>
+            <h3 className="mt-2 text-xl md:text-3xl lg:text-4xl font-bold text-gold leading-tight">{about?.promiseTitle}</h3>
+            <p className="mt-2 md:mt-3 text-gray-200 text-xs md:text-sm lg:text-base leading-relaxed">We champion the voice of consumers in crafting our solutions designed to align your business objectives, deliver commercial success and ultimately leading to better products, services and experiences for the people you serve.</p>
           </div>
         </div>
         <div className="animate-slide-in-right">
