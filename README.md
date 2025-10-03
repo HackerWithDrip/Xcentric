@@ -64,13 +64,21 @@ npm run preview
 
 ## 🌐 Deployment
 
-### Deploy to Netlify (Recommended):
+### 🚀 Automated CI/CD with GitHub Actions (Recommended):
+1. Set up Netlify credentials in GitHub Secrets
+2. Push code to GitHub - automatic deployment!
+3. Preview deployments for pull requests
+4. Production deployments for main branch
+
+See **[GITHUB_ACTIONS_SETUP.md](./GITHUB_ACTIONS_SETUP.md)** for detailed instructions.
+
+### Manual Netlify Deployment:
 1. Push your code to GitHub
 2. Connect your repository to Netlify
 3. Netlify auto-detects settings from `netlify.toml`
 4. Site deploys automatically on every push
 
-See **[NETLIFY_DEPLOYMENT.md](./NETLIFY_DEPLOYMENT.md)** for detailed instructions.
+See **[NETLIFY_DEPLOYMENT.md](./NETLIFY_DEPLOYMENT.md)** for manual deployment instructions.
 
 ### Deploy to GitHub Pages:
 ```bash
@@ -99,8 +107,11 @@ Xcentric_Website/
 │   └── package.json
 ├── package.json         # Root scripts
 ├── netlify.toml         # Netlify configuration
-├── NETLIFY_DEPLOYMENT.md  # Netlify deployment guide
-├── DEPLOYMENT_GUIDE.md  # GitHub Pages deployment guide
+├── .github/workflows/   # GitHub Actions CI/CD
+│   └── netlify-deploy.yml
+├── GITHUB_ACTIONS_SETUP.md  # CI/CD setup guide
+├── NETLIFY_DEPLOYMENT.md  # Manual Netlify deployment
+├── DEPLOYMENT_GUIDE.md  # GitHub Pages deployment
 └── PERFORMANCE_OPTIMIZATIONS.md  # Performance tips
 ```
 
